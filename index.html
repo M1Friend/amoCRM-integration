@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#FFDD2D">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#FFDD2D">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#FFDD2D">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+	<div class="test lf_q_test">
+		<div class="start_page lf_q_start_page"> 
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="elipse-img"> <!-- Image wrap -->
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<!-- Home Screen Title -->
+						<h3 class="screen-title start_heading lf_q_start_heading">Узнайте какой банк	  
+						100% одобрит Вашу заявку</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- Home Screen subtitle -->
+                        <p class="start_text lf_q_start_text screen-under-title">Теперь все условия банков Санкт-Петербурга в одной базе. 
+                        Ответьте на 8 простых вопросов.</p>
+                    </div>
+                    <!-- Home Screen Button -->
+                    <div class="col-md-12">
+                        <div class="accent-button start lf_q_start">
+                            Пройти онлайн тест
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <span class="visitors lf_q_visitors">Сегодня прошли тест <span class="visitors_today lf_q_visitors_today"></span> человек</span>
+                    </div>
+                </div>
+                <footer>
+                    <div class="footer-content">
+                        <img src="img/Polygon-footer.png" class="polygon-footer">
+                        <div class="footer-content-left">
+                            <img class="img-footer gift_img lf_q_gift_img" src="img/footer-img.png">
+                        </div>
+                        <div class="footer-content-right gift">
+                            <p class="footer-title lf_q_gift_heading">
+                                Вместе с результатами теста
+                                вы так же получите:
+                            </p>
+                            <div class="footer-p gift_text lf_q_gift_text">
+                                Закрытый материал «Чек лист: 10 пунктов, 
+                                по которым банк  принимает решение»
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+		<!-- Blue bg -->
+		<div class="blue-bg-middle lf_q_test_heading" style="display: none">
+			<div class="blue-bg test_heading">
+					<p>Узнайте, одобрят ли Вам ипотеку?</p>
+			</div>
+		</div>
+		<!-- Progress Bar -->
+		<div class="container lf_q_progress_bar" style="display: none">
+			<div class="steps-center">
+                <p class="steps lf_q_question_count progress_text">Шаг <span class="lf_q_current_question">1</span> из <span class="lf_q_question_amount">6</span></p>
+                <div class="progress-center">
+                    <div class="progress_wrapper lf_q_progress_wrapper">
+                        <div class="lf_q_progress_active progress_active"></div>
+                        <div class="lf_q_progress_active progress_active"></div>
+                        <div class="lf_q_progress_active progress_active"></div>
+                        <div class="lf_q_progress_active progress_active"></div>
+                        <div class="lf_q_progress_active progress_active"></div>
+                        <div class="lf_q_progress_active progress_active"></div>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<!-- Online Test -->
+		<div class="questions lf_q_questions" style="display: none">
+			<div class="container">
+				<div class="row lf_q_questions_heading">
+					<div class="col-xs-12">
+						<div>
+							<h3 class="screen-title question_text lf_q_question_text">Есть ли у Вас дети или иждивенцы?</h3>
+							<p class="screen-under-title lf_q_question_description">Если дети не отмечены в паспорте, не стоит указывать</p>
+						</div>
+					</div>
+				</div>
+				<div class="row lf_q_items_wrapper">
+					<div class="col-md-12">
+						<!-- Type 1 text field -->
+						<div class="lf_q_item item_1 lf_q_item_1">
+							<div class="row">
+								<div class="col-xs-12 answer">
+									<label>Ф.И.О Вашего ребенка</label>
+									<input style="text-align:center" type="text" class="first-input" >
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6 col-xs-12 answer">
+									<label class="answer_text">Контактный телефон</label>
+									<input style="text-align:center" id="phone-choice" type="text" >
+								</div>
+								<div class="col-sm-6 col-xs-12 answer">
+									<label class="label-3 answer_text">Введите Ваш Email</label>
+									<input style="text-align:center" type="text" >
+								</div>
+							</div>
+						</div>
+						<!-- Type 2 slider button-->
+						<div class="lf_q_item item_2 lf_q_item_2" style="display: none">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="item_2_answer custom-switch custom-switch-1"> 
+                                        <div class="text_block">
+                                            <p class="answer_text">У одного ил У одного илии нескольких детей судимость</p>
+                                            <label class="switch">
+                                            <input type="checkbox" value="someval1">
+                                            <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+								</div>
+								<div class="col-md-6">
+									<div class="item_2_answer answer custom-switch"> 
+                                        <div class="text_block">
+                                            <p class="answer_text text">У одного или нескольких детей судимость
+                                            </p>
+                                            <label class="switch">
+                                            <input type="checkbox" value="someval2">
+                                            <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+								</div>
+                            </div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="item_2_answer answer  custom-switch"> 
+                                        <div class="text_block">
+                                            <p class="answer_text text">У одного или нескольких детей судимость</p>
+                                            <label class="switch">
+                                            <input type="checkbox" value="someval3">
+                                            <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+								</div>
+								<div class="col-md-6">
+									<div class="item_2_answer answer custom-switch"> 
+                                        <div class="text_block">
+                                            <p class="answer_text text">У одного или нескольких детей судимость</p>
+                                            <label class="switch">
+                                            <input type="checkbox" value="someval4">
+                                            <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+								</div>
+                            </div>
+						</div>
+						<!-- Type 3 range-->
+						<div class="lf_q_item item_3 lf_q_item_3" style="display: none">
+                            <p class="title-test answer_text">
+                                У меня есть <span class="lf_q_range_val">8</span> детей
+                            </p>
+                            <span class="range-count-1 progress_text">0</span>
+                            <span class="range-count-2 progress_text">24</span>
+                            <input type="range" min="0" max="24" step="1" value="8">
+						</div>
+						<!-- Type 4 img button-->
+                        <div class="lf_q_item item_4 lf_q_item_4" style="display: none">
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                                <label class="img-answer answer answer_img lf_q_button">
+                                    <input type="checkbox" style="display: none">
+                                    <img src="img/kinder.png" class="img">
+                                    <p class="equal-height-col answer_text">Да, у меня есть трое и более детей
+                                    Да, у меня есть трое и более детей fkgkgkkgkgkgkg
+                                    Да, у меня есть трое и более детей</p>
+                                </label>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                                <label class="img-answer answer answer_img lf_q_button">
+                                    <input type="checkbox" style="display: none">
+                                    <img src="img/kinder.png" class="img">
+                                    <p class="equal-height-col answer_text">Да, у меня есть трое и более детей
+                                        Да, у меня есть трое и более детей
+                                    Да, у меня есть трое и более детей</p>
+                                </label>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                <label class="img-answer answer answer_img lf_q_button">
+                                    <input type="checkbox" style="display: none">
+                                    <img src="img/kinder.png" class="img">
+                                    <p class="equal-height-col answer_text">Да, у меня есть трое и более детей
+                                        Да, у меня есть трое и более детей
+                                    </p>
+                                </label>
+                            </div>
+						</div>
+						<!-- Type 5 simple button-->
+						<div class="lf_q_item item_5 lf_q_item_5" style="display: none">
+							<label class="empty-button answer lf_q_button">
+								<div class="answer_text"> Один ребенок</div>
+								<input type="checkbox" id="true-radio" name="type-1-input">
+							</label>
+							<label class="empty-button answer lf_q_button">
+								<div class="answer_text">Один ребенок</div>
+								<input type="checkbox" id="true-radio" name="type-1-input">
+							 </label>
+							<label class="empty-button answer lf_q_button">
+								<div class="answer_text">Один ребенок</div>
+								<input type="checkbox" id="true-radio" name="type-1-input">
+							</label>
+						</div>
+						<div class="lf_q_item item_5 lf_q_item_6" style="display: none">
+							<label class="empty-button answer lf_q_button">
+								<div class="answer_text"> Один ребенок</div>
+								<input type="checkbox" id="true-radio" name="type-1-input">
+							</label>
+							<label class="empty-button answer lf_q_button">
+								<div class="answer_text">Один ребенок</div>
+								<input type="checkbox" id="true-radio" name="type-1-input">
+							 </label>
+							<label class="empty-button answer lf_q_button">
+								<div class="answer_text">Один ребенок</div>
+								<input type="checkbox" id="true-radio" name="type-1-input">
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+            <!-- footer-for-2button -->
+            <div class="container lf_q_questions_footer">
+                <div class="row">
+                    <footer class="footer-full-width-two-buttons">
+                        <div class="footer-content">
+                            <img src="img/Polygon-footer.png" class="polygon-footer gift_img">
+                            <div class="footer-content-left">
+                                <img class="img-footer gift_img" src="img/footer-img.png">
+                            </div>
+                            <div class="footer-content-right gift">
+                                <p class="footer-title lf_q_gift_heading">
+                                    В конце теста Вы получите:
+                                </p>
+                                <div class="footer-p gift_text">
+                                    Закрытый материал «Чек лист: 10 пунктов, 
+                                    по которым банк  принимает решение»
+                                </div>
+                            </div>
+                            <div class="footer-content-button footer-content-button-back">
+                                    <div class="accent-button-full-width accent-button-back back lf_q_back">Назад</div>
+                            </div>
+                            <div class="footer-content-button footer-content-button-next">
+                                    <div class="accent-button-full-width button lf_q_next">Далее <img src="img/right-arrow.png"></div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <!-- Analize  -->
+            <div class="analize lf_q_analysis" style="display: none">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="screen-title">Ожидайте, идет анализ Ваших ответов</h3>
+                            <p class="screen-under-title">Через несколько секунд Вам откроется окно 
+                            с результатами теста</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 lf_q_analysis">
+                            <span>100%</span>
+                            <div class="analize-progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="lf_q_results" style="display: none">
+                		<!-- Variant 2 -->
+			<div class="leed-form lf_q_main_form_wrapper">
+                <form class="container" id="lf_q_main_form">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="screen-title lf_q_main_form_h">
+                                Чтобы получить результаты теста пожалуйста
+                                заполните форму ниже
+                            </h3>
+                        </div>
+                        <div class="col-md-12">
+                            <p class="screen-under-title">
+                                Пожалуйста, вводите достоверные данные !
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="input-center-wrap control">
+                            <label for="cont_1" class="label-3 for-input" name="email" class="for-input">Введите Ваш Email</label>
+                            <input class="center-form-input" style="text-align: center;" id="cont_1" type="text" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="input-center-wrap control">
+                            <label for="cont_2" class="for-input">Контактный телефон</label>
+                            <input class="phone-choice center-form-input" id="cont_2" style="text-align: center;" type="text" name="phone" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="blue-bg blue-bg-center">
+                                <img src="img/Polygon-footer.png" class="polygon-footer">
+                                <p>
+                                Для отправки SMS подтверждения, 
+                                (без СПАМА)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-center-data-text">
+                            <div class="col-md-12">
+                                <p> <img src="img/zamok.png" class="lock">Ваши данные надёжно защищены и не будут переданы третьим лицам</p>
+                                <label class="check-container">
+                                <p>
+                                <input type="checkbox" id="lf_q_agreement" checked>
+                                Я принимаю условия политики конфиденциальности</p>
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <footer class="footer-full-width">
+                            <div class="footer-content">
+                                <img src="img/Polygon-footer.png" class="polygon-footer">
+                                <div class="footer-content-left">
+                                    <img class="img-footer gift_img lf_q_gift_img" src="img/footer-img.png">
+
+                                </div>
+                                <div class="footer-content-right gift">
+                                    <p class="footer-title lf_q_gift_heading">
+                                        Вместе с результатами теста
+                                        вы так же получите:
+                                    </p>
+                                    <div class="footer-p gift_text">
+                                        Закрытый материал «Чек лист: 10 пунктов, 
+                                        по которым банк  принимает решение»
+                                    </div>
+                                </div>
+                                <div class="footer-content-button button">
+                                        <div class="accent-button-full-width" id="lf_q_main_form_button">Подтвердить телефон</div>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </form>
+	        </div>
+					<!-- Sms -->
+		    <div class="sms-verification lf_q_verify_popup" style="display: none">
+			    <form class="container" id="lf_q_verify_form">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="screen-title lf_q_verify_form_h">
+                                На номер телефона <span></span> отправлено
+                                SMS с кодом доступа к результатам теста
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="screen-under-title verify_timeout lf_q_verify_send_again">
+                                Повторная отправка возможна через <span>1:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="screen-under-title">
+                                Введите код подтверждения
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 verify">
+                            <div class="input-sms-wrap">
+                            <input style="text-align:center" type="text" id="lf_q_verify_code" name="verify">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-12">
+                        <p class="screen-under-title lf_q_verify_back">
+                            Изменить номер
+                        </div>
+                    </div>
+                   <!-- Footer for sms ver -->
+                    <div class="row">
+                        <footer class="footer-full-width">
+                            <div class="footer-content">
+                                <img src="img/Polygon-footer.png" class="polygon-footer">
+                                <div class="footer-content-left">
+                                    <img class="img-footer gift_img lf_q_gift_img" src="img/footer-img.png">
+
+                                </div>
+                                <div class="footer-content-right gift">
+                                    <p class="footer-title lf_q_gift_heading">
+                                        Вместе с результатами теста
+                                        вы так же получите:
+                                    </p>
+                                    <div class="footer-p gift_text">
+                                        Закрытый материал «Чек лист: 10 пунктов, 
+                                        по которым банк  принимает решение»
+                                    </div>
+                                </div>
+                                <div class="footer-content-button button">
+                                        <div class="accent-button-full-width" id="lf_q_verify_form_button">Открыть результаты теста</div>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </form>
+			</div>
+        </div>
+
+	<!-- Thank you -->
+        <div class="success lf_q_success" style="display: none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="elipse-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="screen-title" class="start_heading">Тест успешно пройден. Результаты отосланы Вам на Email</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="start_text screen-under-title"> В течении 10 минут вам ответит специалст 
+                        Ответьте на 8 простых вопросов.</p>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="accent-button start">
+                            Скачать подарок <img src="img/arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="footer-content">
+                        <img src="img/Polygon-footer.png" class="polygon-footer">
+                        <div class="footer-content-left">
+                            <img class="img-footer gift_img" src="img/footer-img.png">
+
+                        </div>
+                        <div class="footer-content-right gift">
+                            <p class="footer-title lf_q_gift_heading">
+                                Вместе с результатами теста
+                                вы так же получите:
+                            </p>
+                            <div class="footer-p gift_text">
+                                Закрытый материал «Чек лист: 10 пунктов, 
+                                по которым банк  принимает решение»
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+	</div>
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+    <script src="js/lf_core.js"></script>
+    <script src="js/main.cc.js"></script>
+</body>
+</html>

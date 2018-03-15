@@ -1,0 +1,9 @@
+[
+    {"question":"Текстовое поле","inputType":"text","questionNumber":"1", "answerType":"text", "skip": false},
+    {"question":"Слайдер кнопка","inputType":"checkbox","questionNumber":"2", "answerType":"b-slider", "skip": false },
+    {"question":"Ползунок","inputType":"range","questionNumber":"3", "answerType":"range", "skip": false},
+    {"question":"Кнопка с картинкой","inputType":"checkbox","questionNumber":"4", "answerType":"b-image", "skip": false},
+    {"question":"Простая кнопка","inputType":"checkbox","questionNumber":"5", "answerType":"b-simple", "skip": false},
+    {"question":"Простейшая кнопка","inputType":"checkbox","questionNumber":"5", "answerType":"b-simple", "skip": false},
+    {"_yaCounterID":"46893756","smsActivate":true, "smsAero":{"user":"pavelboloshovtpr@gmail.com","password":"LEC6CdEuFNfdwDD1yzgVe4g88xtS"}, "embed":false, "loader":true, "projectID": "65168", "file":false}
+]
