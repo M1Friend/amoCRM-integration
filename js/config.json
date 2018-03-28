@@ -5,5 +5,5 @@
     {"question":"Кнопка с картинкой","inputType":"checkbox","questionNumber":"4", "answerType":"b-image", "skip": false},
     {"question":"Простая кнопка","inputType":"checkbox","questionNumber":"5", "answerType":"b-simple", "skip": false},
     {"question":"Простейшая кнопка","inputType":"checkbox","questionNumber":"5", "answerType":"b-simple", "skip": false},
-    {"_yaCounterID":"46893756","smsActivate":true, "smsAero":{"user":"pavelboloshovtpr@gmail.com","password":"LEC6CdEuFNfdwDD1yzgVe4g88xtS"}, "embed":false, "loader":true, "projectID": "65168", "file":false}
+    {"_yaCounterID":"NNNNNNNN","smsActivate":true, "smsAero":{"user":"your@mail.com","password":"PASSWORD"}, "embed":false, "loader":true, "projectID": "65168", "file":false}
 ]
